@@ -17,4 +17,6 @@ Embedded Digital watch with four modes (Alarm, Timer, Clock, Stopwatch)
 5. 1 X Buzzer
 
 # Implementation of the project
-− The controlling signal comes from the Bluetooth module whether from the Mobile, or the laptop, that signal is received by the controller ATMEGA328P which receives the signal with UART communication protocol.
+- This digital watch has four modes, Alarm, Timer, Clock, & Stopwatch. for each one of these modes (Timer, Clock, Stopwatch), i used a dedicated timer (OVF) to control it.
+- the project consists of the MC ATMEGA32, LCD, Keypad (4X4),  couple of push buttons, & Buzzer.
+- in this project i used Modular programming, with drivers for MCAL peripherals like Timer, DIO, and drivers for HAL devices like LCD, Keypad, Buzzer, Push buttons, all that with Interrupts, & callback functions.
